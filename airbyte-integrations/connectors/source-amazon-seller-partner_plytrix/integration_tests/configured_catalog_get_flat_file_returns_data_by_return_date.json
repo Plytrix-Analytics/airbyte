@@ -1,0 +1,106 @@
+{
+  "streams" : [
+    {
+      "stream" : {
+        "name" : "GET_FBA_FULFILLMENT_CUSTOMER_RETURNS_DATA",
+        "json_schema" : {
+          "title" : "Flat File All Returns Data Reports (by return date)",
+          "description" : "Flat File All Returns Data by return Date General Reports",
+          "type" : "object",
+          "$schema" : "http://json-schema.org/draft-07/schema#",
+          "properties" : {
+            "return-date" : {
+              "type" : "string",
+              "format" : "date-time"
+            },
+            "order-id" : {
+              "type" : "string"
+            },
+            "sku" : {
+              "type" : [
+                "null",
+                "string"
+              ]
+            },
+            "asin" : {
+              "type" : [
+                "null",
+                "string"
+              ]
+            },
+            "fnsku" : {
+              "type" : [
+                "null",
+                "string"
+              ]
+            },
+            "product-name" : {
+              "type" : [
+                "null",
+                "string"
+              ]
+            },
+            "quantity" : {
+              "type" : [
+                "null",
+                "string"
+              ]
+            },
+            "fulfillment-center-id" : {
+              "type" : [
+                "null",
+                "string"
+              ]
+            },
+            "detailed-disposition" : {
+              "type" : [
+                "null",
+                "string"
+              ]
+            },
+            "reason" : {
+              "type" : [
+                "null",
+                "string"
+              ]
+            },
+            "status" : {
+              "type" : [
+                "null",
+                "string"
+              ]
+            },
+            "license-plate-number" : {
+              "type" : [
+                "null",
+                "string"
+              ]
+            },
+            "customer-comments" : {
+              "type" : [
+                "null",
+                "string"
+              ]
+            }
+          }
+        },
+        "supported_sync_modes" : [
+          "full_refresh",
+          "incremental"
+        ],
+        "source_defined_cursor" : true,
+        "default_cursor_field" : [
+          "return-date"
+        ]
+      },
+      "sync_mode" : "incremental",
+      "destination_sync_mode" : "append",
+      "cursor_field" : [
+        "return-date"
+      ]
+    }
+  ]
+}
+
+
+

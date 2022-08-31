@@ -1,0 +1,48 @@
+{
+  "title": "Flat File All Returns Data Reports (by return date)",
+  "description": "Flat File All Returns Data by return Date General Reports",
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "return-date": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "order-id": {
+      "type": "string"
+    },
+    "sku": {
+      "type": ["null", "string"]
+    },
+    "asin": {
+      "type": ["null", "string"]
+    },
+    "fnsku": {
+      "type": ["null", "string"]
+    },
+    "product-name": {
+      "type": ["null", "string"]
+    },
+    "quantity": {
+      "type": ["null", "string"]
+    },
+    "fulfillment-center-id": {
+      "type": ["null", "string"]
+    },
+    "detailed-disposition": {
+      "type": ["null", "string"]
+    },
+    "reason": {
+      "type": ["null", "string"]
+    },
+    "status": {
+      "type": ["null", "string"]
+    },
+    "license-plate-number": {
+      "type": ["null", "string"]
+    },
+    "customer-comments": {
+      "type": ["null", "string"]
+    }
+  }
+}

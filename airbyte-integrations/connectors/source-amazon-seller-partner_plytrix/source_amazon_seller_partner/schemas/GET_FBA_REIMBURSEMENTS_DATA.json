@@ -1,0 +1,63 @@
+{
+  "title": "FBA reiumbursement data by approval datw",
+  "description": "FBA reiumbursement data by approval datw",
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "approval-date": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "order-id": {
+      "type": "string"
+    },
+    "reiumbursement-id": {
+      "type": "string"
+    },
+    "case-id": {
+      "type": "string"
+    },
+    "amazon-order-id": {
+      "type": "string"
+    },
+    "sku": {
+      "type": ["null", "string"]
+    },
+    "fnsku": {
+      "type": ["null", "string"]
+    },
+    "asin": {
+      "type": ["null", "string"]
+    },
+    "product-name": {
+      "type": ["null", "string"]
+    },
+    "condition": {
+      "type": ["null", "string"]
+    },
+    "currency-unit": {
+      "type": ["null", "string"]
+    },
+    "detailed-disposition": {
+      "type": ["null", "string"]
+    },
+    "amount-per-unit": {
+      "type": ["null", "string"]
+    },
+    "amount-total": {
+      "type": ["null", "string"]
+    },
+    "quantity-reiumbursed-cash": {
+      "type": ["null", "string"]
+    },
+    "quantity-reiumbursed-inventory": {
+      "type": ["null", "string"]
+    },
+    "quantity-reiumbursed-id": {
+      "type": ["null", "string"]
+    },
+    "quantity-reiumbursed-type": {
+      "type": ["null", "string"]
+    }
+  }
+}
